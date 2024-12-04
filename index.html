@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/86827241cc.js" crossorigin="anonymous"></script>
+    <title>PickIt</title>
+</head>
+<body>
+    <h1 class="head0">Need to Decide Something?</h1>
+    <div class="main0">
+        <form class="creator">
+            <div class="input-group">
+                <label for="question">Question:</label>
+                <input type="text" class="question" id="question" name="question"><br>
+            </div>
+            <div class="input-group">
+                <label for="option1">Option 1:</label>
+                <input type="text" class="option" id="option1" name="option1"><br>
+            </div>
+
+            <div class="input-group">
+                <label for="option2">Option 2:</label>
+                <input type="text" class="option" id="option2" name="option2"><br>
+            </div>
+            
+            <div class="input-group">
+                <label for="option3">Option 3:</label>
+                <input type="text" class="option" id="option3" name="option3"><br>
+            </div>
+            
+            <div class="input-group">
+                <label for="option4">Option 4:</label>
+                <input type="text" class="option" id="option4" name="option4"><br>
+            </div>
+        </form>
+        <div class="user-block">
+            <form class="user-select">
+                <h2>Send to contacts:</h2>
+                <div class="input-group">
+                    <label for="user1">Person 1</label>
+                    <input type="checkbox" id="user1" name="user1">
+                </div>
+                <div class="input-group">
+                    <label for="user2">Person 2</label>
+                    <input type="checkbox" id="user2" name="user2">
+                </div>
+                <div class="input-group">
+                    <label for="user3">Person 3</label>
+                    <input type="checkbox" id="user3" name="user3">
+                </div>
+                <div class="input-group">
+                    <label for="user4">Person 4</label>
+                    <input type="checkbox" id="user4" name="user4">
+                </div>
+            </form>
+        </div>
+    </div>
+    <button class="send">Send link</button>
+
+    <h1 class="head1 hidden">Rank Your Choices!</h1>
+    <div class="main hidden">
+        <div class="num-container">
+            <div class="num">1st</div>
+            <div class="num">2nd</div>
+            <div class="num">3rd</div>
+            <div class="num">4th</div>
+        </div>
+        <div class="item-container">
+            <div class="choice" id="1" >
+                <div class="item" draggable="true" data-id="1">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </div>
+            </div>
+            <div class="choice" id="2" >
+                <div class="item" draggable="true" data-id="2">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </div>
+            </div>
+            <div class="choice" id="3">
+                <div class="item"  draggable="true" data-id="3">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </div>
+            </div>
+            <div class="choice" id="4">
+                <div class="item" draggable="true" data-id="4">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <button class="submit hidden">SUBMIT</button>
+
+    <button class="back-btn hidden">back</button>
+    <button class="save-btn hidden">save</button>
+    <h1 class="head2 hidden">Final Rankings</h1>
+    <div class="main2 hidden">
+        <div class="results-container">
+            <div class="results" id="1"></div>
+            <div class="results" id="2"></div>
+            <div class="results" id="3"></div>
+            <div class="results" id="4"></div>
+        </div>
+        <div class="users-container">
+            <h2>Voters:</h2>
+            <div class="user">Me</div>
+            <div class="user"></div>
+            <div class="user"></div>
+            <div class="user"></div>
+            <div class="user"></div>
+        </div>
+    </div>
+    <div class="comments-container hidden">
+        <h2>Comments</h2>
+        <p class="comment">Person 2: I wanted item 2 to win!</p>
+        <p class="comment">Person 4: I guess that's what we're going with.</p>
+        <p class="comment">Person 3: Next time!!</p>
+        <p class="comment">Person 1: I used the back button to change my answer.</p>
+        <input class="comment-input" placeholder="Write Your Reply...">
+        <button class="comment-btn">Add Comment</button>
+    </div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>

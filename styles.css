@@ -1,0 +1,301 @@
+.main0, .main, .main2 {
+    display: flex;
+    flex-direction: row;
+    transition: ease all;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main0 {
+    gap: 10px;
+}
+
+.creator {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    border-radius: 5px;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.creator > .input-group {
+    background-color: rgb(107, 224, 107);
+    padding: 20px;
+    border: solid 2px rgb(107, 224, 107);
+    border-radius: 15px;
+}
+
+.user-block {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+i {
+    float:right;
+    color: rgb(44, 92, 44);
+}
+
+.user-select {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.user-select > .input-group {
+    background: rgb(107, 224, 107);
+    color: rgb(44, 92, 44);
+    width: fit-content;
+    padding: 5px;
+    border: solid 2px rgb(107, 224, 107);
+    border-radius: 15px;
+}
+
+.num-container {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    text-align: center;
+    gap: 75px;
+    padding: 20px;
+    align-items: end;
+    justify-content: right;
+
+}
+
+.num {
+    background-color: cornflowerblue;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    max-width: 20px;
+    min-height: 20px;
+}
+
+.item-container {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 60%;
+}
+
+.choice {
+    flex-basis: 20%;
+    background: #ddd;
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+}
+
+.results-container {
+    width: 60%;
+    background: #ddd;
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+}
+
+.users-container {
+    width: 20%;
+    height: fit-content;
+    background: #ddd;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    margin-left: 20px;
+    overflow-y: scroll;
+}
+
+.comments-container {
+    width: 80%;
+    height: fit-content;
+    background: #ddd;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    justify-self: center;
+    margin-left: 50px;
+    border: 2px solid #ddd;
+}
+
+.ranking {
+    color: rgb(26, 54, 26);
+}
+
+.points {
+    color: rgb(44, 92, 44);
+}
+
+.draggedOver {
+    flex-basis: 20%;
+    background: #ddd;
+    padding: 20px;
+    border: 2px solid rgb(255, 130, 207);
+    border-radius: 25px;
+    cursor: grabbing;
+}
+
+h1.head0 {
+    font-family: Helvetica, sans-serif;
+    font-weight: light;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+h1.head1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: light;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+h1.head2 {
+    font-family: Helvetica, sans-serif;
+    font-weight: light;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-weight: light;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.item {
+    background: rgb(107, 224, 107);
+    color: rgb(44, 92, 44);
+    margin: 10px;
+    padding: 20px;
+    border: solid 2px rgb(107, 224, 107);
+    border-radius: 15px;
+
+}
+
+.item:hover {
+    border: solid 2px rgb(70, 148, 70);
+    cursor: grab;
+}
+
+
+.results {
+    background: rgb(107, 224, 107);
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    border: solid 2px rgb(107, 224, 107);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.results.winner {
+    border: 2px solid rgb(255, 130, 207);
+}
+
+.user {
+    background: rgb(107, 224, 107);
+    color: rgb(44, 92, 44);
+    margin: 5px;
+    padding: 5px;
+    border: solid 2px rgb(107, 224, 107);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dragging {
+    background: rgb(72, 151, 72);
+    border: solid 2px rgb(107, 224, 107);
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: grabbing;
+}
+
+.send {
+    background-color: cornflowerblue;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: calc(50% - 50px);
+    border: 2px solid cornflowerblue;
+}
+
+.submit {
+    background-color: cornflowerblue;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: calc(50% - 50px);
+    border-radius: 5px;
+    border: 2px solid cornflowerblue;
+}
+
+.save-btn {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid cornflowerblue;
+    float: right;
+}
+
+.back-btn {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid cornflowerblue;
+}
+
+.comment-btn {
+    background-color: cornflowerblue;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 2px solid cornflowerblue;
+}
+
+.active {
+    background-color: rgb(71, 104, 166);
+}
+
+.submit:hover, .back-btn:hover, .comment-btn:hover, .send:hover, .save-btn:hover {
+    border: 2px solid rgb(255, 130, 207);
+    cursor: pointer;
+}
+
+.comment {
+    font-family: Helvetica, sans-serif;
+    color: rgb(44, 92, 44);
+    border-bottom: 1px solid rgb(72, 151, 72);
+}
+
+
+.hidden {
+    display: none;
+}
